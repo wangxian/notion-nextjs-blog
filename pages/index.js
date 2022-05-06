@@ -26,7 +26,7 @@ export default function Home({ posts }) {
               <a className="w-full">
                 <div className="mb-8 w-full">
                 <span className="text-sm text-gray-700">
-                  {new Date(post.properties.Date.date.start).toLocaleString('en-US', {
+                  {new Date(post.properties.Date.date ? post.properties.Date.date.start : post.created_time).toLocaleString('en-US', {
                     month: 'short',
                     day: '2-digit',
                     year: 'numeric',
@@ -38,7 +38,7 @@ export default function Home({ posts }) {
                   </h3>
 
                   <p className="text-gray-700 text-md">
-                    {post.properties.Description.rich_text[0].plain_text}
+                    {post.properties.Description.rich_text.length>0 ? post.properties.Description.rich_text[0].plain_text : ''}
                   </p>
                 </div>
               </a>
@@ -53,7 +53,7 @@ export default function Home({ posts }) {
 export const getStaticProps = async () => {
   const database = await getNotionData(process.env.NOTION_DATABASE_ID)
 
-  // console.log(database[0].properties);
+  console.log(database);
 
   return {
     props: {
