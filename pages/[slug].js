@@ -12,7 +12,7 @@ export default function Post({ page, blocks }) {
   return (
     <BlogLayout data={page} content={blocks}>
       <span className="text-sm text-gray-700">
-        {new Date(page.created_time).toLocaleString('en-US', {
+        {new Date(page.properties.Date.date.start).toLocaleString('en-US', {
           month: 'short',
           day: '2-digit',
           year: 'numeric',

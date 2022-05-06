@@ -3,14 +3,14 @@
   "description": "A starter blog template powered by Next.js, Notion and Tailwind CSS",
   "version": "0.1.0",
   "author": {
-    "name": "Lucio Villa",
-    "email": "hi@luciovilla.com",
-    "url": "https://luciovilla.com"
+    "name": "wangxian",
+    "email": "wx@xiqiu.top",
+    "url": "https://shuo.xiqiu.top"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luciovilla/notion-nextjs-blog.git"
+    "url": "git+https://github.com/wangxian/notion-nextjs-blog.git"
   },
   "scripts": {
     "dev": "next dev",
