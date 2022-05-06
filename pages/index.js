@@ -15,7 +15,7 @@ export default function Home({ posts }) {
         </div>
 
         <h2 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 mt-8 text-black">
-          Timeline Posts
+          Posts Timeline
         </h2>
 
         {!posts.length && <p className="text-gray-600 mb-4">No posts found.</p>}
