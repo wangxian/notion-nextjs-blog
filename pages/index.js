@@ -6,7 +6,7 @@ import { getNotionData } from '../lib/getNotionData'
 export default function Home({ posts }) {
   return (
     <Container
-      title="说说 | shuoshuo"
+      title="说说"
       description="说说，基于 Notion 和 Next.js 的个人博客，发布一些简短话语～"
     >
       <div className="max-w-2xl mx-auto mb-16">
