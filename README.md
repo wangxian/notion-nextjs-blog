@@ -1,4 +1,4 @@
-# A Next.js, Notion and Tailwind CSS starter blog template 
+# A Next.js, Notion and Tailwind CSS starter blog template - 1001
 
 This is an open-source starter blog template that is statically generated with Next.js, content powered by Notion and styled with Tailwind CSS.
 
